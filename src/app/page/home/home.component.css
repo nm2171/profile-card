@@ -1,0 +1,32 @@
+.card {
+    background-color: #8e8b87;
+    width: 50%;
+    margin: 4rem 17rem;
+}
+
+.image-container {
+    padding: 30px;
+    margin: 11% 10% 0 10%;
+    width: 80%;
+}
+
+.info {
+    width: 80%;
+}
+
+.icon {
+    right: 3px;
+}
+
+.edit {
+    position: absolute;
+    left: 83%;
+    top: 1%;
+}
+
+.btn {
+    width: 40px;
+    height: 30px;
+    padding: 0;
+
+}

@@ -1,0 +1,25 @@
+<form [formGroup]="editInfo">
+    <h1>Edit Profile Data</h1>
+    <div class="col">
+        <label for="firstName" class="form-label">First Name: </label>
+        <input type="text" class="form-control" placeholder="Enter first name" name="firstName" formControlName="firstName">
+    </div>
+    <div class="col">
+        <label for="lastName" class="form-label">Last Name: </label>
+        <input type="text" class="form-control" placeholder="Enter last name" name="lastName" formControlName="lastName">
+    </div>
+    <div class="col">
+        <label for="location" class="form-label">Location: </label>
+        <input type="text" class="form-control" placeholder="Enter location" name="location" formControlName="location">
+    </div>
+    <br>
+    <div class="row align-items-center">
+        <div class="col-md-auto">
+            <button class="btn btn-primary" type="submit" (click)="confirm('yes')">Save</button>
+        </div>
+        <div class="col-md-auto">
+            <button class="btn btn-primary" type="submit" (click)="confirm('no')">Cancel</button>
+        </div>
+    </div>
+
+</form>

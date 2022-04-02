@@ -1,0 +1,31 @@
+.card {
+    background-color: antiquewhite;
+    width: 50%;
+    margin: 4rem 17rem;
+}
+
+.image-container {
+    padding: 50px;
+}
+
+.info {
+    width: 80%;
+}
+
+.icon {
+    right: 3px;
+}
+
+.edit {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 71%;
+    top: 10%;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+
+}

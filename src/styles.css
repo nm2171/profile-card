@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+/* @import url('https: //fonts.google.com/specimen/Eczar?selection.family=Eczar#standard-styles'); */
+
+
+
+@font-face {
+    font-family: "Eczar";
+    src: local("Oxygen"), url(./assets/fonts/Eczar/Eczar-VariableFont_wght.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: "Eczar", Arial, Helvetica, sans-serif;
+}
