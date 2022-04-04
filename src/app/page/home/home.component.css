@@ -1,12 +1,18 @@
 .card {
-    background-color: #8e8b87;
-    width: 50%;
+    background-image: url('https://t3.ftcdn.net/jpg/03/98/41/60/360_F_398416001_f0UKwAUdtkBE1FQ3UCVzAv3a911uHgxm.jpg');
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 100%;
     margin: 4rem 17rem;
 }
 
-.image-container {
-    padding: 30px;
-    margin: 11% 10% 0 10%;
+img {
+    width: 30%;
+    margin-top: 15.5%;
+    margin-bottom: 0.5%;
+}
+
+.card-body {
     width: 80%;
 }
 
@@ -20,13 +26,7 @@
 
 .edit {
     position: absolute;
-    left: 83%;
-    top: 1%;
-}
-
-.btn {
-    width: 40px;
-    height: 30px;
-    padding: 0;
-
+    width: 15%;
+    left: 86%;
+    top: 2%;
 }

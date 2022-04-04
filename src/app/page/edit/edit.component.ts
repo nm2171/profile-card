@@ -24,12 +24,24 @@ export class EditComponent implements OnInit {
 
   ngOnInit(): void {
 
+    if (!localStorage.getItem("profile")) {
+      this.editInfo = this.formBuilder.group({
+        firstName: ['', Validators.required],
+        lastName: ['', Validators.required],
+        location: ['', Validators.required],
+        profileImg: ['', Validators.required],
+        details: ['', Validators.required]
+      });
+    } else {
+      this.editInfo = this.formBuilder.group({
+        firstName: [JSON.parse(localStorage.getItem('profile')!).firstName, Validators.required],
+        lastName: [JSON.parse(localStorage.getItem('profile')!).lastName, Validators.required],
+        location: [JSON.parse(localStorage.getItem('profile')!).location, Validators.required],
+        profileImg: [JSON.parse(localStorage.getItem('profile')!).profileImg, Validators.required],
+        details: [JSON.parse(localStorage.getItem('profile')!).details, Validators.required]
+      });
+    }
 
-    this.editInfo = this.formBuilder.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      location: ['', Validators.required],
-    });
   }
   
   confirm(res: string) {

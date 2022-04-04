@@ -1,5 +1,5 @@
-<form [formGroup]="editInfo">
-    <h1>Edit Profile Data</h1>
+<form [formGroup]="editInfo" class="shadow-lg">
+    <h1 style="color: rgb(209, 17, 17);">Edit Profile Data</h1>
     <div class="col">
         <label for="firstName" class="form-label">First Name: </label>
         <input type="text" class="form-control" placeholder="Enter first name" name="firstName" formControlName="firstName">
@@ -12,14 +12,22 @@
         <label for="location" class="form-label">Location: </label>
         <input type="text" class="form-control" placeholder="Enter location" name="location" formControlName="location">
     </div>
+    <div class="col">
+        <label for="details" class="form-label">Bio: </label>
+        <input type="text" class="form-control" placeholder="Enter personal info" name="details" formControlName="details">
+    </div>
+    <div class="col">
+        <label for="profileImg" class="form-label">Image URL: </label>
+        <input type="text" class="form-control" placeholder="Enter image URL" name="profileImg" formControlName="profileImg">
+    </div>
     <br>
     <div class="row align-items-center">
-        <div class="col-md-auto">
-            <button class="btn btn-primary" type="submit" (click)="confirm('yes')">Save</button>
-        </div>
-        <div class="col-md-auto">
-            <button class="btn btn-primary" type="submit" (click)="confirm('no')">Cancel</button>
-        </div>
+        <!-- <div class="col-md-auto"> -->
+            <button class="btn btn-outline-success" style="width: 20%; margin: 0 5% 0 25%;" type="submit" (click)="confirm('yes')">Save</button>
+        <!-- </div> -->
+        <!-- <div class="col-md-auto"> -->
+            <button class="btn btn-outline-danger" style="width: 20%; margin: 0 25% 0 5%;" type="submit" (click)="confirm('no')">Cancel</button>
+        <!-- </div> -->
     </div>
 
 </form>
